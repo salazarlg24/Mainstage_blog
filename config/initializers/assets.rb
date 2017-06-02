@@ -3,6 +3,12 @@
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
 
+Rails.application.config.assets.precompile += %w( css/style.css )
+Rails.application.config.assets.precompile += %w( css/materialize.css )
+
+Rails.application.config.assets.precompile += %w( js/materialize.js )
+
+Rails.application.config.assets.precompile += %w( js/jquery.smooth-scroll.min.js )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

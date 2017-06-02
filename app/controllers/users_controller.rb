@@ -1,4 +1,4 @@
-sublclass UsersController < ApplicationController
+class UsersController < ApplicationController
 	def index
 	end
 
@@ -12,26 +12,25 @@ sublclass UsersController < ApplicationController
 			redirect_to "/blogs"
 
 		else
-		flash[:error] = "User information not found. Please try again." 
-		redirect_to :back	
+		flash[:error] = "User information not found. Please try again."
+		redirect_to :back
 		end
 	end
 
 	def register
 		@user = User.create(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation])
-	  	if @user.valid?
+	  if @user.valid?
 	  		session[:user_id] = @user.id
 	  		puts 'User created'
-	  		redirect_to "/blog"		  	
+	  		redirect_to "/blog"
 		else
-			flash[:errors] = @user.errors.full_messages 
+			flash[:errors] = @user.errors.full_messages
 			redirect_to :back
 		end
 	end
 
 	def logout
 		session.clear
-	redirect_to '/'
+		redirect_to '/'
 	end
-
 end

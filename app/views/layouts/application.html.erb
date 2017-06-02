@@ -3,12 +3,22 @@
   <head>
     <title>MainstageBlog</title>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'css/style.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'css/materialize.css', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- SEO -->
+    <title>Materialog - A Blog Template</title>
+    <meta name="description" content="HTML5 Premium Blog Template Based on Material Design">
+    <link type="text/plain" rel="author" href="humans.txt">
+    <link href="favicon.png" rel="icon" type="image/png">
+
   </head>
 
   <body>
     <%= yield %>
+    <%= javascript_include_tag 'js/materialize.js', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'js/jquery.smooth-scroll.min.js', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

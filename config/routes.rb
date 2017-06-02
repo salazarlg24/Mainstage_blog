@@ -1,18 +1,17 @@
 Rails.application.routes.draw do
-	# ************ BLOG ROUTES *****************
+	# ************ COMMENT ROUTES *****************
 	get 'comment/index'
 
 	# ************ BLOG ROUTES *****************
-	root => 'users#index'
+
+	# ************ USER ROUTES *****************
+
+	root 'users#index'
 
 	get 'users/new' => 'users#new'
 
-	post => '/register' => 'users#register'
+	post '/register' => 'users#register'
 
-	post "/login" => 'blogs#login'
+	post "/login" => 'users#login'
 
-	# ************ USER ROUTES *****************
-	get 'users/index'
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

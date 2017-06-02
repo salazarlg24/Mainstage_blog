@@ -1,2 +1,154 @@
-<h1>Blog#index</h1>
-<p>Find me in app/views/blog/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- SEO -->
+    <title>Materialog - A Blog Template</title>
+    <meta name="description" content="HTML5 Premium Blog Template Based on Material Design">
+    <link type="text/plain" rel="author" href="humans.txt">
+    
+    <link href="favicon.png" rel="icon" type="image/png">
+
+    <link rel="stylesheet" href="css/materialize.min.css"  media="screen,projection">
+    <link rel="stylesheet" href="css/style.css"  media="screen,projection">
+    <link rel="stylesheet" href="css/custom.css"  media="screen,projection">
+  </head>
+  <body>
+
+    <div class="highlighted parallax-container">
+      <a class="logo" href="index-1.html">
+        <img src="mainstage.png" alt="logo">
+      </a>
+      <div class="parallax"><img src="img/highlighted/mixer.jpg" alt="mountain fog"></div>
+    </div>
+    
+<!--
+    <header class="white z-depth-1">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col s12">
+            <nav>
+              <div class="nav-wrapper">
+                <a class="button-collapse" href="#" data-activates="nav-mobile">
+                  <i class="mdi-navigation-menu"></i>
+                </a>
+
+                <ul class="desktop-menu hide-on-med-and-down">
+                  <li><a href="index-1.html">Home</a></li>
+                  <li><a href="about-1.html">About me</a></li>
+                  <li class="active"><a href="post-1.html">Single post</a></li>
+                  <li><a href="contact-1.html">Contact</a></li>
+                </ul>
+
+                <ul class="side-nav" id="nav-mobile">
+                  <li><a href="index-1.html">Home</a></li>
+                  <li><a href="about-1.html">About me</a></li>
+                  <li class="active"><a href="post-1.html">Single post</a></li>
+                  <li><a href="contact-1.html">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+      </div>
+    </header>
+-->
+
+    <div class="main-content">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col s12">
+            <img class="responsive-img full-width-img" src="img/blog/.jpg" alt="Work Desk">
+
+            <h1 class="post-title">My first EDM Experience</h1>
+            <span class="post-date">23 Fev. 2015</span>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sodales lobortis nunc. Duis aliquam lacus eu dui facilisis molestie. Donec in massa ac mi venenatis volutpat. Nunc vitae finibus velit, sit amet aliquam nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in eleifend nisl, sed sodales sem. Donec eget justo lobortis, scelerisque nunc vel, elementum nisl. In iaculis sem dolor, sed blandit dolor placerat at. Donec condimentum est a posuere vulputate.</p>
+           
+            <p>Vivamus imperdiet erat et feugiat pulvinar. Phasellus vel purus egestas, molestie sem a, venenatis nulla. In cursus nisi elit, ac mollis justo malesuada non. Nulla felis justo, tempus vel dignissim eu, finibus id felis. Proin lectus sapien, tempus ut finibus ornare, congue ut risus. Proin lacinia vitae nibh ac mattis. Ut posuere neque et arcu gravida tristique. Cras fermentum, magna et pellentesque porta, velit tellus cursus felis, sit amet cursus elit arcu sit amet risus.</p>
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae error, tempora. Repudiandae consequuntur nostrum eaque commodi obcaecati, voluptatem neque dolores dolore id. Rerum deserunt nisi sed, odit, provident quibusdam cum.
+            </blockquote>
+            <p>Aenean sed massa odio. Sed ac ligula ut velit elementum finibus. Fusce vitae justo ac diam ullamcorper ultrices a ut libero. Nulla sed vestibulum tortor. Sed aliquet lorem at magna fermentum efficitur. Donec condimentum nunc sed nisi imperdiet blandit. Duis metus ipsum, lacinia id dolor a, porttitor aliquet mauris. Donec sit amet accumsan augue</p>
+            <h5>Final Thoughts</h5>
+            <p>Iaculis rutrum ex. Phasellus pulvinar, sapien eu lacinia egestas, tellus odio suscipit quam, id dictum lectus diam a augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed a augue fringilla, pulvinar enim id, fringilla elit. Curabitur ex lectus, eleifend at rutrum non, tincidunt ut ante. Sed finibus facilisis ipsum non efficitur. Praesent varius mi mauris, ut rutrum eros euismod quis. Praesent malesuada commodo egestas. Fusce non volutpat elit, at rutrum nisl.</p>
+          </div>
+
+          <div class="col s12 comments">
+            <h3>Comments</h3>
+
+            <form id="theme-comment" action="/comments" method="post" role="form">
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="comment-message" name="comment-message" class="materialize-textarea" required></textarea>
+                  <label for="comment-message">Comment</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <button class="btn waves-effect waves-light blue-grey darken-1" type="submit" name="action">Submit</button>
+                </div>
+              </div>
+            </form>
+
+            <div class="card-panel grey lighten-5 z-depth-1">
+              <div class="row">
+                <div class="col s3 m2 l1">
+                  <img src="img/blog/user1.jpg" alt="" class="circle responsive-img">
+                </div>
+                <div class="col s8 m10 l11">
+                  <h6 class="comment-name"><b>John Doe</b></h6>
+                  <span class="comment-date">25 Fev. 2015</span>
+                  <p>I think this is an excellent article. The ideas behind it are concise and steps to achieve the success are completely true. Great article!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-panel grey lighten-5 z-depth-1">
+              <div class="row">
+                <div class="col s3 m2 l1">
+                  <img src="img/blog/user2.jpg" alt="" class="circle responsive-img">
+                </div>
+                <div class="col s8 m10 l11">
+                  <h6 class="comment-name"><b>Joana Doe</b></h6>
+                  <span class="comment-date">24 Fev. 2015</span>
+                  <p>What an amazing article. I just wished this article was written a few months ago. It would've been very helpful for me.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="white z-depth-1 center">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col s12">
+            <p>Designed by <i class="mdi-action-favorite-outline red-text"></i> Jimmy Mixer & Luis Saladbar <i class="mdi-action-favorite-outline red-text"></i></p>
+          </div>
+        </div>
+
+        <a class="back-to-top btn-floating btn-large waves-effect waves-light blue-grey darken-1" href="#header"><i class="mdi-navigation-expand-less"></i></a>
+
+      </div>
+    </footer>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/jquery.smooth-scroll.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

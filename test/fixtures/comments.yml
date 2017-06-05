@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  comment: MyText
+  comment: MyString
   user: one
-  blog: one
+  blog: 1
 
 two:
-  comment: MyText
+  comment: MyString
   user: two
-  blog: two
+  blog: 1

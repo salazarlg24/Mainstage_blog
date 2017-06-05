@@ -22,7 +22,7 @@ class UsersController < ApplicationController
 	  if @user.valid?
 	  		session[:user_id] = @user.id
 	  		puts 'User created'
-	  		redirect_to "/blog"
+	  		redirect_to "/blogs"
 		else
 			flash[:errors] = @user.errors.full_messages
 			redirect_to :back

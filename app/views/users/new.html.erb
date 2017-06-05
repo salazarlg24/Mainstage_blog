@@ -16,9 +16,16 @@
               <div class='row'>
                 <div class='col s12'></div>
               </div>
-
+              <!-- Register Errors -->
+                  <% if flash[:errors] %>
+                    <% flash[:errors].each do |errs| %>
+                      <p style="color: red"><%= errs %></p>
+                    <% end %>
+                  <% end %>
+                  <!-- Register Erros -->
               <div class='row'>
                 <div class='input-field col s12'>
+                  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
                   <input class='validate' type='text' name='first_name' id='email'/>
                   <label for='email'>Enter First Name</label>
                 </div>
@@ -44,9 +51,9 @@
                   <label for='password'>Enter your password</label>
                 </div>
                 <label style='float: right;'>
-                  <a class='pink-text' href='#!'>
+                  <p class='pink-text' href='#!'>
                     <b>Password must be at least 8 characters.</b>
-                  </a>
+                  </p>
                 </label>
               </div>
 

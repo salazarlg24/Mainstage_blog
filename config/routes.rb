@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 	# ************ COMMENT ROUTES *****************
-	get 'comment/index'
+	post '/comments' => 'comment#create'
 
 	# ************ BLOG ROUTES *****************
+
+	get '/blogs' => 'blog#index'
 
 	# ************ USER ROUTES *****************
 
@@ -13,5 +15,7 @@ Rails.application.routes.draw do
 	post '/register' => 'users#register'
 
 	post "/login" => 'users#login'
+
+	get '/logout' => 'users#logout'
 
 end

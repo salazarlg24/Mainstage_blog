@@ -9,6 +9,9 @@ Rails.application.config.assets.precompile += %w( css/materialize.css )
 Rails.application.config.assets.precompile += %w( js/materialize.js )
 
 Rails.application.config.assets.precompile += %w( js/jquery.smooth-scroll.min.js )
+Rails.application.config.assets.precompile += %w( js/app.js )
+Rails.application.config.assets.precompile += %w( js/retina.min.js )
+Rails.application.config.assets.precompile += %w( js/jquery-2.1.1.min.js )
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

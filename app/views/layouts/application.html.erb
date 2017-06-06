@@ -18,7 +18,21 @@
   </head>
 
   <body>
+
+    <!-- NAVBAR -->
+        <% if !session[:user_id]%>
+          <div class="navbar-fixed" id="header">
+              <nav class="grey darken-4">
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo"><img style="height: 64px;" src="mainstage.png" alt="logo"></a>
+                  <a href="#" class="brand-logo center">Welcome</a>
+                </div>
+              </nav>
+          </div>
+        <% end %>
+
     <%= yield %>
+        
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     
     <%= javascript_include_tag 'js/materialize.js', 'data-turbolinks-track': 'reload' %>
